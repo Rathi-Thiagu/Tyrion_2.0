@@ -1,0 +1,179 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - feedbackWish
+  - smalltalk
+  - ergonomics
+  - ergonomics_selfhelp
+  - ergonomics_assessment
+  - ergonomics_issue
+  - employeeId
+  - appdate
+  - describe_issue
+  - food_court
+  - food_court_timings
+  - eat_food
+  - detect_stress_frustration_anxiety
+  - detect_exhaustion_unproductive
+  - StressTestanswer
+  - company_products
+  - emergency
+  - company_news
+  - detect_complaintType
+  - complaint_description
+  - raise_complaints
+  # - workflow
+  # - aminities 
+  # - products
+  # - applyleave
+  # - booktransport
+  # - reimburse 
+  # - out_of_scope
+
+slots:
+  employeeId:
+    type: unfeaturized
+  issue:
+    type: unfeaturized
+    auto_fill: false
+  date: 
+    type: unfeaturized
+  food:
+    type: unfeaturized
+  stressValue: 
+    type: unfeaturized
+    auto_fill: false
+  test_answer:
+    type: unfeaturized
+  question_count:
+    type: unfeaturized
+    auto_fill: false
+  complaintType:
+    type: unfeaturized
+    auto_fill: false
+  complaint_description:
+    type: unfeaturized
+    auto_fill: false
+
+
+entities:
+  - employeeId
+  - date
+  - food
+  - test_answer
+
+actions: 
+  - action_ergonomics_assessment
+  - action_date
+  - action_appdate
+  - action_book_app
+  - action_describe_issue
+  - action_fc_timings
+  - action_eat_food
+  - action_motivate
+  - action_stress_relief
+  - action_suggest_plans
+  - action_stress_test
+  - action_stress_test_Q1
+  - action_stress_test_Q2
+  - action_stress_test_Q3
+  - action_stress_test_Q4
+  - action_stress_test_Q5
+  - action_stress_test_Q6
+  - action_stress_test_Q7
+  - action_stress_test_Q8
+  - action_stress_test_Q9
+  - action_stress_test_Q10
+  - action_stress_test_results
+  - action_raise_complaints
+  - action_ask_complaint
+  - action_ask_register
+  - action_register_complaint
+
+responses:
+  utter_ask_complaintType:
+  - text: "what is the compaint about ? 1. Individual grievance  2. Group grievance  3. Policy or Union grievance"
+
+  utter_company_news:
+  - text: "Infosys maintains a newsroom that is updated with the latest news, events, conferences, press releases, Journalist Resources, and so on.Link: https://www.infosys.com/newsroom/"
+
+  utter_emergency:
+  - text: "Stay Calm. Please contact the Infosys emergency No: +91 7648234873 / +91 6725462543.National Emergency Numbers: 112 / Police: 100 / Fire: 101 / Ambulance:102. Other Helplines: https://indianhelpline.com/ "
+
+  utter_company_products:
+  - text: " Please check the link for Company services and products  https://www.infosys.com/sitemap.html"
+
+  utter_food_court:
+  - text: "We have 12 food courts on campus that serve a variety of cuisines. Location of food courts : (https://www.google.com/maps/search/food+courts+in+mysore+campus/@12.3615049,76.595163,16z) "
+  
+  utter_employeeId:
+  - text: "Please provide your employeeID"
+
+  utter_appdate:
+  - text: "When would you want to schedule an appointment?"
+
+  utter_submit:
+  - text: "Shall I goahead and book appointment. say yes or no to confirm:\n EmployeeId: {EID}\n Date: {date}\n Reason: Ergonomics Issue"
+
+  utter_ergonomics_issue:
+  - text: "We have a certified nurse on staff who can check at this issue. Would you like to book an appointment to consult with a nurse?"
+
+  utter_ergonomics_assessment:
+  - text: "Prevention is better than Cure. We appreciate your willingness to participate in the ergonomics evaluation."
+
+  utter_ergonomics_selfhelp:
+  - text: "Great ! Here is the link to the Ergonomics Selfhelp (https://www.hsa.ie/eng/Publications_and_Forms/Publications/Occupational_Health/Ergonomics.pdf) and If you require any support, please contact us.Happy Learning"
+  
+  utter_awareness:
+  - text: "Repetitive motion injuries are easier to treat in their early stages. Ignoring symptoms could lead to chronic or serious injury.Here is the link to the Ergonomics Selfhelp (https://www.hsa.ie/eng/Publications_and_Forms/Publications/Occupational_Health/Ergonomics.pdf) and If you require any support, please contact us.Happy Learning"
+
+  utter_ergonomics:
+  - text: "Ergonomics is the science of fitting a workplace to the user’s needs, ergonomics aims to increase efficiency and productivity and reduce discomfort.Do you want self-help or ergonomic assessment or report an ergonomics issue?"
+
+  utter_askhelp:
+  - text: "Is there anything else i can help you with?"
+
+  utter_smalltalk:
+  - text: "I understand your want to converse. I'm Tyrion, a bot with a limited command of the English language. I'm learning about human characteristics and getting better. I am certain that I will be able to engage in amicable conversation in the near future."
+  
+  utter_feedbackWish:
+  - text: "Great. Please click this link (https://www.infyfeedback.com/) to share your thoughts."
+
+  utter_greet:
+  - text: "Hey! I am Tyrion, How are you?"
+  - text: "Hello Tyrion here! How can i help you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://64.media.tumblr.com/e6ddc0cf8793aa5cd19ea7503e78abba/528193adaf2f0a7d-3f/s500x750/8bb1747f0201d265ae3f65bf4a2a0e150684369f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "I am glad to help you. Take care"
+  - text: "Bye, Take care"
+  - text: "Bye, Have a nice day"
+  - text: "Bye, Good day"
+  
+  utter_denybye:
+  - text: "Things will get better. Give it sometime."
+
+  utter_out_of_scope:
+  - text: "Sorry, I can't handle that request."
+
+  utter_iamabot:
+  - text: "I am Tyrion, a chatbot powered by Rasa. I can assist you with your company-related inquiries, workflow, and resources."
+
+      
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
