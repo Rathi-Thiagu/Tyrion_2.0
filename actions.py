@@ -535,7 +535,7 @@ def evaluate_stress(question_ans,question_count,stress_value):
     return stress_value
 
 def SendEmail(toaddr,subject,message):
-    fromaddr = "kr.taway@gmail.com"
+    fromaddr = "xxxxxxxx@gmail.com"
     msg = MIMEMultipart()       # instance of MIMEMultipart
     msg['From'] = fromaddr      # storing the senders email address
     msg['To'] = toaddr          # storing the receivers email address
@@ -548,7 +548,7 @@ def SendEmail(toaddr,subject,message):
     s.ehlo()
     s.starttls()   # start TLS for security
     try:
-        s.login(fromaddr, "throwaway9389")
+        s.login(fromaddr, "xxxxxxxx")
         text = msg.as_string()
         s.sendmail(fromaddr, toaddr, text)
     except:
