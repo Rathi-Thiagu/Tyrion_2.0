@@ -20,11 +20,11 @@ from email.mime.text import MIMEText
 positive = {'never':0,'almost never':1,'sometimes':2,'fairly often':3,'very often':4}
 negative = {'never':4,'almost never':3,'sometimes':2,'fairly often':1,'very often':0}
 #dataset loading 
-df_cd  = pd.read_csv('/content/drive/MyDrive/complaint_details.csv')
-df_emp = pd.read_csv('/content/drive/MyDrive/employee_details.csv')
-df_app = pd.read_csv('/content/drive/MyDrive/app_details.csv')
-df_fc  = pd.read_csv('/content/drive/MyDrive/FC.csv')
-df_ven = pd.read_csv('/content/drive/MyDrive/FC_items.csv')
+df_cd  = pd.read_csv('/data/complaint_details.csv')
+df_emp = pd.read_csv('/data/employee_details.csv')
+df_app = pd.read_csv('/data/app_details.csv')
+df_fc  = pd.read_csv('/data/FC.csv')
+df_ven = pd.read_csv('/data/FC_items.csv')
 
 class ActionRaiseComplaints(Action):
 
