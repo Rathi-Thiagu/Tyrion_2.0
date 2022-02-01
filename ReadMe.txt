@@ -1,5 +1,5 @@
 Code setup: 
-	Download the code from Github repository(https://github.com/Rathi-Thiagu/Tyrion_2.0) and add to the Google drive account where the colab will be run. 
+	Download the code from Github repository(https://github.com/Rathi-Thiagu/Tyrion_2.0) and add to the Google drive account where the colab will be executed. 
 Steps to set up the environment: 
  	Please refer to the Env_setup.pdf document 
 Dataset Preparation : 
